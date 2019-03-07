@@ -12,6 +12,7 @@ class MyWikiTestCase(unittest.TestCase):
         driver.get('http://en.wikipedia.org')
         driver.find_element_by_id('searchInput').send_keys('Sachin Tendulkar')
         driver.find_element_by_id('searchButton').click()
+        print("Test Passed")
  
  
     def tearDown(self):
